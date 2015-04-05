@@ -1,3 +1,7 @@
+body {
+	background-color:beige;
+}
+
 #corpoLogin .inputtext {
 	border: 1px solid #A2BCCF;
 	width: 150px;
