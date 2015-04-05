@@ -8,3 +8,6 @@ function NovoProduto(){
 function Voltar(){
 	location.href = "index.html"
 }
+function Relatorio(){
+	location.href = "relatorio.html"
+}
