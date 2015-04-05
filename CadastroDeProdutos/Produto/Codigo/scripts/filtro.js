@@ -2,20 +2,14 @@ var imported = document.createElement('script');
 imported.src = 'scripts/utils.js';
 document.head.appendChild(imported);
 
-$(function(){
-	$("#tabela input").keyup(function(){		
-
-		var index = $(this).parent().index();
-		var nth = "#tabela td:nth-child("+(index+1).toString()+")";
-		var valor = $(this).val().toUpperCase();
-		$("#tabela tbody tr").show();
-		$(nth).each(function(){
-			if($(this).text().toUpperCase().indexOf(valor) < 0){
-				$(this).parent().hide();
-			}
-		});
-	});
-	$("#tabela input").blur(function(){
-		$(this).val("");
-	});	
-});
+function filter (phrase, _id, cellNr){
+  var suche = phrase.value.toLowerCase();
+  var table = document.getElementById(_id);
+  var ele;
+  for (var r = 1; r < table.rows.length; r++){
+  	ele = table.rows[r].cells[cellNr].innerHTML.replace(/<[^>]+>/g,"");
+  	if (ele.toLowerCase().indexOf(suche)>=0 )
+    table.rows[r].style.display = '';
+  	else table.rows[r].style.display = 'none';
+  }
+}

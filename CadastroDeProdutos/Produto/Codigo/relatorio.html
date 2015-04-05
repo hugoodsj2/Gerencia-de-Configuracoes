@@ -3,7 +3,6 @@
 	<title>Relatório de Produtos</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script> 
 	<script type="text/javascript" src="scripts/filtro.js"></script> 	
 	<script src="scripts/index.js"></script>
 <head>
@@ -32,10 +31,10 @@
 				</tr>
 				<tr>
 					<th>Filtro</th>
-					<th><input type="text" id="txtColuna2"/></th>
+					<th><input name="filt" type="text" onKeyUp="filter(this, 'tabela', '1')"></th>
 					<th></th>
 					<th></th>
-					<th><input type="text" id="txtColuna5"/></th>
+					<th><input name="filt5" type="text" onKeyUp="filter(this, 'tabela', '4')"></th>
 				</tr>				
 			</thead>
 			<tbody>
