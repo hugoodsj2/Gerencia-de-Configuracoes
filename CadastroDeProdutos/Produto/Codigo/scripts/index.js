@@ -5,3 +5,6 @@ document.head.appendChild(imported);
 function NovoProduto(){
 		location.href = "cadastro.html";
 }
+function Voltar(){
+	location.href = "index.html"
+}
