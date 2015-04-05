@@ -125,3 +125,33 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
 	background: #FFF
 }
+
+
+.tituloPagina {
+	display: block;
+	width: 90%;
+	float: right;
+	padding-top: 25px;
+}
+	
+.formatoTitulo {
+	font-size:30px;
+	font-family:Arial;
+}
+
+#menuIcicial {
+	background-color:black;
+	height:36px;
+	padding-left: 93px;
+}
+
+#menuIcicial a {
+	text-decoration:none;
+	background-color:#808080;
+	padding:10px;
+	color:white;
+}
+
+#menuIcicial a:hover {
+	background-color:#D3D3D3;
+}
