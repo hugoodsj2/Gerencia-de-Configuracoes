@@ -1,3 +1,0 @@
-<ul id="menu">
-  <li>Home</li><li>About Us</li><li>Contact</li>
-</ul>
