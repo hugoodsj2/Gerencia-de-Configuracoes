@@ -2,14 +2,14 @@ var imported = document.createElement('script');
 imported.src = 'scripts/utils.js';
 document.head.appendChild(imported);
 
-function filter (phrase, _id, cellNr){
-  var suche = phrase.value.toLowerCase();
-  var table = document.getElementById(_id);
-  var ele;
+function filter (phrase, id, cellNr){
+  var pal = phrase.value.toLowerCase();
+  var table = document.getElementById(id);
+  var dado;
   for (var r = 1; r < table.rows.length; r++){
-  	ele = table.rows[r].cells[cellNr].innerHTML.replace(/<[^>]+>/g,"");
-  	if (ele.toLowerCase().indexOf(suche)>=0 )
-    table.rows[r].style.display = '';
+  	dado = table.rows[r].cells[cellNr].innerHTML.replace(/<[^>]+>/g,"");
+  	if (dado.toLowerCase().indexOf(pal)>=0 )
+    	table.rows[r].style.display = '';
   	else table.rows[r].style.display = 'none';
   }
 }

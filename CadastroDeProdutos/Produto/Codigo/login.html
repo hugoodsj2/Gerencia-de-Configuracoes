@@ -15,13 +15,13 @@
 		<div class="formatoTitulo">Sistema de Cadastro SISCOP</div>
 		</div>
 		<div id="corpoLogin">
-			<form id="formLogin">
+			<form id="formLogin" name="formLogin" method="post" action="scripts/login.php">
 				<div class="div_left">
 					<label for="txt_usuario">Usuario:</label><br>
-					<input type="text" id="txt_usuario" class="inputtext" maxlength="10" /><br>
+					<input type="text" id="txt_usuario" name="login" class="inputtext" maxlength="10" /><br>
 					<label for="txt_senha">Senha:</label><br>
-					<input type="password" id="txt_senha" class="inputtext" maxlength="10" /> <br><br>
-					<input type="button" id=btn_login" class="myButton" onclick="ValidarLogin()" value="Entrar" />
+					<input type="password" id="txt_senha" name="senha" class="inputtext" maxlength="10" /> <br><br>
+					<input type="submit" name="enviar" id="btn_login" class="myButton" onclick="ValidarLogin()" value="Entrar" />
 				</div>
 				<div>
 					<img id="imgLogoLogin" src="images/Git-Icon-Black.png" width="140px" height="140px">

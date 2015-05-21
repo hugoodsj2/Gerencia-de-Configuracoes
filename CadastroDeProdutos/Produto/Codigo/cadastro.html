@@ -3,7 +3,7 @@
 	<head>
 		<title>Cadastro de Produtos SISCOP</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="author" content="Hugo">	
+		<meta name="author" content="Hugo, Bárbara">	
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<script src="scripts/cadastro.js"></script>
 	</head>
@@ -22,7 +22,7 @@
 		</nav>
 	</header> <br>
 		<div id="corpoCad">
-			<form id="formLogin">
+			<form name ="Cadastro" id="formLogin" method="post" action="scripts/cadastro.php">
 				<div class="div_left">
 					<label for="txt_codigo">Código:</label><br>
 					<input type="text" name="CODIGO" id="txt_codigo" class="inputtext" maxlength="10" /><br>
@@ -31,11 +31,9 @@
 					<label for="txt_preco">Preço</label><br>
 					<input type="text" name="PRECO" id="txt_preco" class="inputtext" maxlength="20" /> <br>
 					<label for="txt_quantidade">Quantidade:</label><br>
-					<input type="text" name="QUANTIDADE" id="txt_quantidade" class="inputtext" maxlength="10" /> <br>
-					<label for="txt_categoria">Categoria:</label><br>
-					<input type="text" id="txt_categoria" class="inputtext" maxlength="2" /> <br><br>
-					
-					<input type="submit" name="SALVAR" id="btnSalvar" class="myButton" onclick="Salvar()" value="Salvar">
+					<input type="text" name="QUANTIDADE" id="txt_quantidade" class="inputtext" maxlength="10" /> <br><br>
+					<input type="submit" value="Cadastrar" name="SALVAR" class="myButton" onclick="return validaCadastro();Salvar()"/>
+					<!--<input type="submit" name="SALVAR" id="btnSalvar" class="myButton" onclick="Salvar()" value="Salvar">-->
 					<input type="button" id="btnVoltar" class="myButton" onclick="Voltar()" value="Voltar">
 				</div>
 			</form>

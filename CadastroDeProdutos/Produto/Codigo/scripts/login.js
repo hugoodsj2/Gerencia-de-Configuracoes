@@ -7,11 +7,10 @@ function ValidarLogin(){
 	var senha = value("txt_senha");
 	
 	if(usuario == "" || senha == ""){
-		alert("Dados invalidos!");
+		alert("Preencha os Dados!");
 	}
-	else
-	{
-		alert("Sucesso!");
+	else{
+		alert("Logado!");
 		location.href = "index.html";
 	}
 }
