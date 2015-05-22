@@ -1,7 +1,11 @@
+<?php
+    $root = getcwd();    
+?>
 <!DOCTYPE html>
 <html>
 	<head>
         <title>Login - Sistema de Cadastro SISCOP</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="description" content="Sistema utilizado para cadastro de produtos">
 		<meta name="keywords" content="cadastro,produto,cadastro de produtos,produtos">
 		<meta name="author" content="Hugo,Sara,Barbara,Rodrigo">		
@@ -28,8 +32,4 @@
 				</div>
 			</form>
 		</div>
-		<footer>
-			<address><label class="labelCSS">Av. Afonso Vaz de Melo, 1.200 - Barreiro de Baixo - CEP: 30640-070 - Belo Horizonte - MG - Telefone geral: (31)3319-4444<label></address>
-		</footer>
-	</body>
-</html>
+<?php include ''.$root.'/include/footer.php'; ?>

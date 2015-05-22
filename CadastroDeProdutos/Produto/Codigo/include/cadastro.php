@@ -26,6 +26,6 @@ include("conexao.php");
 	}
 	// Fechar conexão
 	mysqli_close($conn);	
-	header("location:../cadastro.html");
+	header("location:../cadastro.php");
 	
 ?>

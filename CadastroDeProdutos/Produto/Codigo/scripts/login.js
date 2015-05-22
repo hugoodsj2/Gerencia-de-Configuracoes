@@ -11,6 +11,6 @@ function ValidarLogin(){
 	}
 	else{
 		alert("Logado!");
-		location.href = "index.html";
+		location.href = "index.php";
 	}
 }

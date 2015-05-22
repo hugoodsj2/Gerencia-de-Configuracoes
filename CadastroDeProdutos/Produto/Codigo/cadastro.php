@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Cadastro de Produtos SISCOP</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="author" content="Hugo, Bárbara">	
-		<link rel="stylesheet" type="text/css" href="styles/style.css">
-		<script src="scripts/cadastro.js"></script>
-	</head>
-	<body>
-		<header>
-		<img id="imgLogoLogin" src="images/Git-Icon-Black.png" width="80px" height="80px">
-		<div class="tituloPagina">
-		<div class="formatoTitulo">Sistema de Cadastro SISCOP - Novo Registro</div>
-		</div>
-		
-		<nav id="menuIcicial">
-			<a href="index.html">LISTAGEM</a>
-			<a href="relatorio.html">RELATÓRIO</a>
-			<a href="ajuda.html">AJUDA</a>
-			<a onclick="Sair()">SAIR</a>		
-		</nav>
-	</header> <br>
+<?php
+    $root = getcwd();    
+    include ''.$root.'/include/header.php';
+?>
 		<div id="corpoCad">
 			<form name ="Cadastro" id="formLogin" method="post" action="include/cadastro.php">
 				<div class="div_left">
@@ -39,8 +20,4 @@
 			</form>
 		</div>
 		<br>		
-		<footer>
-			<address><label class="labelCSS">Av. Afonso Vaz de Melo, 1.200 - Barreiro de Baixo - CEP: 30640-070 - Belo Horizonte - MG - Telefone geral: (31)3319-4444<label></address>
-		</footer>
-	</body>
-</html>
+<?php include ''.$root.'/include/footer.php'; ?>

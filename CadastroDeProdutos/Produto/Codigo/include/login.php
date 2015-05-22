@@ -11,11 +11,11 @@ include("conexao.php");
 	 // Percorre dados de retorno da consulta SQL
 	 echo"LOGIN OK <br>";
 	 echo mysqli_fetch_assoc($result)["LOGIN"];
-	 header("location:../index.html");
+	 header("location:../index.php");
 	}
 	else{
 		echo"LOGIN NÃO OK.";
-		header("location:../login.html");
+		header("location:../login.php");
 	}
 	// Fechar conexão
 	mysqli_close($conn);

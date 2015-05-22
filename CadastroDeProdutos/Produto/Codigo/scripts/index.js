@@ -3,11 +3,11 @@ imported.src = 'scripts/utils.js';
 document.head.appendChild(imported);
 
 function NovoProduto(){
-		location.href = "cadastro.html";
+		location.href = "cadastro.php";
 }
 function Voltar(){
-	location.href = "index.html"
+	location.href = "index.php"
 }
 function Relatorio(){
-	location.href = "relatorio.html"
+	location.href = "relatorio.php"
 }

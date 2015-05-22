@@ -3,7 +3,7 @@ imported.src = 'scripts/utils.js';
 document.head.appendChild(imported);
 
 function Voltar(){
-		location.href = "index.html";
+		location.href = "index.php";
 }
 
 function Salvar(){

@@ -7,6 +7,6 @@ function innerHtml(idElemento) {
 function Sair() {
     var r = confirm("Deseja sair?");
     if (r) {
-        location.href = "login.html";
+        location.href = "login.php";
     }
 }

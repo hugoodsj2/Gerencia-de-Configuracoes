@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<title>Informações do SISCOP</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="author" content="Hugo Oliveira">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<script src="scripts/ajuda.js"></script>
-	<script src="scripts/index.js"></script>
-<head>
-</head>
-<body>
-		<header>
-		<img id="imgLogoLogin" src="images/Git-Icon-Black.png" width="80px" height="80px">
-		<div class="tituloPagina">
-		<div class="formatoTitulo">Sistema de Cadastro SISCOP - Ajuda/Informações</div>
-		</div>
-		
-		<nav id="menuIcicial">
-			<a href="index.html">LISTAGEM</a>
-			<a href="relatorio.html">RELATÓRIO</a>
-			<a href="ajuda.html">AJUDA</a>
-			<a onclick="Sair()">SAIR</a>		
-		</nav>
-	</header> <br>
+<?php
+    $root = getcwd();    
+    include ''.$root.'/include/header.php';
+?>
 	<div>
 		<ul>
 			<li id="liAjuda"> Ajuda <div id="divAjuda" onclick="AbrirEsconderUL('liAjuda',this.id)">+</div>
@@ -39,8 +19,4 @@
 	</div>
 	<br>
 		<input type="button" id="btrVoltar" class="myButton" onclick="Voltar()" value="Voltar">
-		<footer>
-			<address><label class="labelCSS">Av. Afonso Vaz de Melo, 1.200 - Barreiro de Baixo - CEP: 30640-070 - Belo Horizonte - MG - Telefone geral: (31)3319-4444<label></address>
-		</footer>
-</body>
-</html>
+<?php include ''.$root.'/include/footer.php'; ?>
