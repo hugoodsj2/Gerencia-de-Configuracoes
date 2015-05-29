@@ -11,11 +11,11 @@ function AbrirEsconderUL(id,idDiv){
 	var div = document.getElementById(idDiv);
 	if(window.getComputedStyle(ul).display === 'none'){
 		ul.style.display = "block";
-		div.innerHTML = "-";
+		div.innerHTML = "<img src='images/button-menos-detalhes.png'>";
 	}
 	else {
 		ul.style.display = "none";
-		div.innerHTML = "+";
+		div.innerHTML = "<img src='images/button-mais-detalhes.png'>";
 	}
 }
 function EsconderUL(indexUL){
