@@ -1,4 +1,7 @@
 <?php
+    session_start();
+    $_SESSION["LOGADO"] = 0;
+    $_SESSION["NOMELOG"] = "";
     $root = getcwd();    
 ?>
 <!DOCTYPE html>
