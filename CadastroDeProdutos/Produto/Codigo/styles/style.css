@@ -130,6 +130,15 @@ tr:nth-child(odd) {
 	background: #FFF
 }
 
+ul li{
+	list-style-type: circle;
+	color:#777777;
+}
+
+li{
+	list-style: circle;
+	color:#777777;
+}
 
 .tituloPagina {
 	display: block;
