@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+	session_start();
+	if(!(isset($_SESSION["LOGADO"]) && $_SESSION["LOGADO"] == 1)){
+		header("location:../login.php?mens=Favor fazer login para utilizar o sistema!");
+	}
+?>
 <html>
 	<title>Informações do SISCOP</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -15,7 +21,7 @@
 		<header>
 		<img id="imgLogoLogin" src="images/Git-Icon-Black.png" width="80px" height="80px">
 		<div class="tituloPagina">
-		<div class="formatoTitulo">Sistema de Cadastro SISCOP</div>
+		<div class="formatoTitulo">Sistema de Cadastro SISCOP - Usuario Logado: <?php echo $_SESSION["NOMELOG"] ?></div>
 		</div>
 		
 		<nav id="menuIcicial">
