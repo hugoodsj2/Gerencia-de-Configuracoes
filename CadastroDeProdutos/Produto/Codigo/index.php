@@ -31,7 +31,7 @@
  			?>
 				<tr>
 					<td align="center">
-						<?php echo " " . $row["CODIGO"] . " ";?>
+						<?php echo " " . $row["CODIGO"] . " "; $idProd = $row["CODIGO"];?>
 					</td>
 					<td align="center">
 						<?php	echo " " . $row["DESCRICAO"] . " ";?>
@@ -43,7 +43,7 @@
 						<?php echo " " . $row["QUANTIDADE"] . "<br>";?>
 					</td>
 					<td align="center">
-						<a href="cadastro.php">Editar</a> / <a href="#aaa">Excluir</a>
+						<?php echo "<a href='cadastro.php?edit=1&id=$idProd'>Editar</a> / <a onclick='confirmaExluir($idProd)'>Excluir</a>" ?>
 					</td>
 			<?php
 				 }
@@ -52,5 +52,6 @@
 			</tr>
 		</table>
 		<br>
-		<input type="button" id="btnNovo" class="myButton" onclick="NovoProduto()" value="Novo Produto">
+		<input type="button" id="btnNovo" class="myButton" onclick="NovoProduto()" value="Novo Produto">		
+		
 <?php include ''.$root.'/include/footer.php'; ?>
