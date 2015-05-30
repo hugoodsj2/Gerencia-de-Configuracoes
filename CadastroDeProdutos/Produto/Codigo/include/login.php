@@ -5,20 +5,18 @@ include("conexao.php");
 	// Disparar a consulta
 	$sql = "SELECT CODIGO, LOGIN, NOMEUSUARIO, SENHA FROM usuario WHERE LOGIN = '$login' AND SENHA = '$senha'";
 	$result = mysqli_query($conn, $sql);
+	// Inicia sessao.
 	session_start();
 	// Listar os dados da tabela
-	if (mysqli_num_rows($result) > 0){ // Verifica se existem registros
-		 // Inicia sessao.
+	if (mysqli_num_rows($result) > 0){ // Verifica se existem registros		 
 		// Percorre dados de retorno da consulta SQL
-		echo"LOGIN OK <br>";
 		$_SESSION["LOGADO"] = 1;
-		$_SESSION["NOMELOG"] = mysqli_fetch_assoc($result)["LOGIN"];
+		$_SESSION["NOMELOG"] = mysqli_fetch_assoc($result)["NOMEUSUARIO"];
 		header("location:../index.php");
 	}
 	else{
 		$_SESSION["LOGADO"] = 0;
 		$_SESSION["NOMELOG"] = "";
-		echo"LOGIN NÃO OK.";
 		header("location:../login.php?mens=LOGIN NÃO OK!");
 	}
 	// Fechar conexão
