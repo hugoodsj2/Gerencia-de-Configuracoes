@@ -12,7 +12,7 @@ function Relatorio(){
 	location.href = "relatorio.php"
 }
 function confirmaExluir(idProd) {
-    var r=confirm("Você tem certeza?");
+    var r=confirm('Você tem certeza que deseja excluir '+idProd+'?');
     if (r==true)
     {     
              document.location.href= 'include/excluir.php?codProd='+idProd;              
