@@ -43,7 +43,7 @@
 						<?php echo " " . $row["QUANTIDADE"] . "<br>";?>
 					</td>
 					<td align="center">
-						<?php echo "<a href='cadastro.php?edit=1&id=$idProd'><img src='images/edit_icon.png' width='15px'/></a> / <a onclick='confirmaExluir($idProd)'><img src='images/delete_icon.png' width='15px'/></a>" ?>
+						<?php echo "<a href='cadastro.php?edit=1&id=$idProd'><img src='images/edit_icon.png' width='15px' alt='Editar' title='Editar'/></a> / <a onclick='confirmaExluir($idProd)'><img src='images/delete_icon.png' width='15px' alt='Excluir' title='Excluir'/></a>" ?>
 					</td>
 			<?php
 				 }
