@@ -21,7 +21,7 @@
 		<header>
 		<img id="imgLogoLogin" src="images/Git-Icon-Black.png" width="80px" height="80px">
 		<div class="tituloPagina">
-		<div class="formatoTitulo">Sistema de Cadastro SISCOP - Bem Vindo: <?php echo $_SESSION["NOMELOG"] ?></div>
+		<div class="formatoTitulo">Sistema de Cadastro SISCOP - Bem-Vindo: <?php echo $_SESSION["NOMELOG"] ?>!</div>
 		</div>
 		
 		<nav id="menuIcicial">
