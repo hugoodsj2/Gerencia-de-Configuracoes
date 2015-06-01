@@ -6,10 +6,6 @@ function Voltar(){
 		location.href = "index.php";
 }
 
-function Salvar(){
-		alert("Salvo com sucesso!");
-}
-
 function validaCadastro(){
 	var erro = "";
 	if(document.getElementById("txt_codigo").value == ""){
@@ -25,6 +21,7 @@ function validaCadastro(){
 		erro += "\nPreencha a Quatidade!";
 	}
 	if(erro == ""){
+		alert("Salvo com sucesso!");
 		return true;
 	}
 	else{

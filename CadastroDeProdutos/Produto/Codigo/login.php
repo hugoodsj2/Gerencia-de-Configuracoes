@@ -33,6 +33,11 @@
 				<div>
 					<img id="imgLogoLogin" src="images/Git-Icon-Black.png" width="140px" height="140px">
 				</div>
-			</form>
+			</form><br>
+			<span style='color:red;'><?php
+				if(isset($_GET["mens"])){
+					echo $_GET["mens"];
+				}
+			?></span>
 		</div>
 <?php include ''.$root.'/include/footer.php'; ?>

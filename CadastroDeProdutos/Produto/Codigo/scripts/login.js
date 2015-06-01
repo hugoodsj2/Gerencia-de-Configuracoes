@@ -8,9 +8,6 @@ function ValidarLogin(){
 	
 	if(usuario == "" || senha == ""){
 		alert("Preencha os Dados!");
-	}
-	else{
-		alert("Logado!");
-		location.href = "index.php";
+		return false;
 	}
 }

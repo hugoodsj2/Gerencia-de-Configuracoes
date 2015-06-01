@@ -17,7 +17,7 @@ include("conexao.php");
 	else{
 		$_SESSION["LOGADO"] = 0;
 		$_SESSION["NOMELOG"] = "";
-		header("location:../login.php?mens=LOGIN NÃO OK!");
+		header("location:../login.php?mens=Login Inválido!");
 	}
 	// Fechar conexão
 	mysqli_close($conn);

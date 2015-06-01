@@ -41,7 +41,7 @@
 					<input type="text" name="PRECO" id="txt_preco" class="inputtext" maxlength="20" value="<?php echo $preco?>" /> <br>
 					<label for="txt_quantidade">Quantidade:</label><br>
 					<input type="text" name="QUANTIDADE" id="txt_quantidade" class="inputtext" maxlength="10" value="<?php echo $quantidade?>" /> <br><br>
-					<input type="submit" value="Salvar" name="SALVAR" class="myButton" onclick="return validaCadastro();Salvar()"/>
+					<input type="submit" value="Salvar" name="SALVAR" class="myButton" onclick="return validaCadastro()"/>
 					<input type="button" id="btnVoltar" class="myButton" onclick="Voltar()" value="Voltar">
 				</div>
 			</form>

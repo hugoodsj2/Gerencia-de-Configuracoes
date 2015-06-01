@@ -1,23 +1,23 @@
-<?php
+ï»¿<?php
     $root = getcwd();    
     include ''.$root.'/include/header.php';
 ?>
 		<table cellspacing="0" cellpadding="2px">
 			<tr>
 				<th align="center">
-					Código
+					CÃ³digo
 				</th>
 				<th align="center" class="w500"> 
-					Descrição
+					DescriÃ§Ã£o
 				</th>
 				<th align="center" class="w200">
-					Preço
+					PreÃ§o
 				</th>
 				<th align="center" class="w100">
 					Quantidade
 				</th>
 				<th align="center">
-					Opções
+					OpÃ§Ãµes
 				</th>
 			</tr>
 			<?php
@@ -43,7 +43,7 @@
 						<?php echo " " . $row["QUANTIDADE"] . "<br>";?>
 					</td>
 					<td align="center">
-						<?php echo "<a href='cadastro.php?edit=1&id=$idProd'>Editar</a> / <a onclick='confirmaExluir($idProd)'>Excluir</a>" ?>
+						<?php echo "<a href='cadastro.php?edit=1&id=$idProd'><img src='images/edit_icon.png' width='15px'/></a> / <a onclick='confirmaExluir($idProd)'><img src='images/delete_icon.png' width='15px'/></a>" ?>
 					</td>
 			<?php
 				 }
