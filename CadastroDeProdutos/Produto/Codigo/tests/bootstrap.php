@@ -5,5 +5,4 @@ ini_set('display_errors', 1);
 
 @session_start();
 
-require_once __DIR__.'/../include/produto.php';
-require_once __DIR__.'/../include/cadastro.php';
+require_once __DIR__.'/../include/desconto.php';
